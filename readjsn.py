@@ -1,9 +1,11 @@
 import json
 import requests
+from itertools import cycle
 
 
 def readjson():
-  isslocdata = 'https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json'
+  isslocdata = 'https://api.wheretheiss.at/v1/satellites/25544/tles'
   isslocjson = requests.get(isslocdata, auth=('user', 'pass'))
   isslocjson_read = isslocjson.json()
-  iss_single = isslocjson_read[0]
+
+  return isslocjson_read
