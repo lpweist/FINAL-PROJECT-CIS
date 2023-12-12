@@ -1,6 +1,5 @@
 import ephem
 
-
 def getcoords(iss_single):
   #break into 3 lines to turn into TLE format
   line1 = iss_single["header"]
