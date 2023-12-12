@@ -203,6 +203,16 @@ files = [
 ]
 
 [[package]]
+name = "functions"
+version = "0.7.0"
+description = "Functional programming in Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "functions-0.7.0.tar.gz", hash = "sha256:5a36bd11d36bbce210fecddd9ff1a475a86035905818a4075d6c7ebb2f714181"},
+]
+
+[[package]]
 name = "idna"
 version = "3.6"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -266,4 +276,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "2b75b41c4c53b096cb3e054198645e95c1d019eca51eb58d97d9304d6b7a3167"
+content-hash = "a5ad8bffafdfe0f1fbe97fbdfaf568cbaa4206690c92b453613742ef2e510516"
