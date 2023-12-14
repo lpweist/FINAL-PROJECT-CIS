@@ -1,4 +1,5 @@
 import ephem
+from datetime import datetime
 
 
 def getcoords(iss_single):
@@ -8,6 +9,8 @@ def getcoords(iss_single):
   line3 = iss_single["line2"]
 
   iss = ephem.readtle(line1, line2, line3)
-  iss.compute()
+  you = ephem.Observer()
+  you.date = datetime.now()
+  iss.compute(you)
   print('%s %s' % (iss.sublat, iss.sublong))
   return iss
