@@ -16,7 +16,7 @@ def makegui():
     plotmap(iss_decoded)
     tk.messagebox.showinfo(
         'Results', 'The ISS is at ' + str(iss_decoded.sublat) + ',' +
-        str(iss_decoded.sublong))
+        str(iss_decoded.sublong) + '. View the map at issmap.html.')
     return 1
   else:
     tk.messagebox.showinfo('Return', 'You will not learn where the ISS is.')

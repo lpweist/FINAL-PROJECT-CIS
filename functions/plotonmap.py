@@ -9,6 +9,6 @@ def plotmap(iss_decoded):
       popup="ISS location",
       icon=folium.Icon(color="green"),
   ).add_to(map)
-  map.save("map.html")
+  map.save("issmap.html")
 
   return 1

@@ -9,5 +9,5 @@ def getcoords(iss_single):
 
   iss = ephem.readtle(line1, line2, line3)
   iss.compute()
-  print('%s %s' % (iss.sublong, iss.sublat))
+  print('%s %s' % (iss.sublat, iss.sublong))
   return iss
